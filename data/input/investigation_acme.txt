@@ -1,0 +1,5 @@
+Investigacao ACME
+Contato tecnico: bob.threat@acme-corp.com
+Handles: bob_threat, @acme_watch
+Analista citado: Bob Smith
+Link: https://status.acme-corp.example

@@ -1,0 +1,101 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Virtual environments
+.venv
+venv/
+ENV/
+env/
+
+# Testing & Coverage
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Logs
+*.log
+logs/
+*.pot
+
+# Secrets & Configuration
+config/config.json
+.env
+.env.local
+.env.*.local
+
+# Data artifacts
+data/output/*
+!data/output/.gitkeep
+data/cache/
+*.db
+*.sqlite
+*.sqlite3
+
+# Ollama & Neo4j local data
+ollama_data/
+neo4j_data/
+neo4j/
+
+# System
+.DS_Store
+Thumbs.db
+*.bak
+
+# Temporary files
+*.tmp
+*.temp
+*.patch
+*.diff
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Node (if any frontend tooling)
+node_modules/
+npm-debug.log
+yarn-error.log

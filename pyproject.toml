@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argos-nt"
+version = "0.1.0"
+description = "ARGOS-NT: OSINT intelligence pipeline with Neo4j and Textual"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "textual>=0.71.0",
+  "neo4j>=5.21.0",
+  "pydantic>=2.7.0",
+  "fpdf2>=2.7.9",
+  "langchain>=0.2.10",
+  "langchain-core>=0.2.25",
+  "langchain-openai>=0.1.20",
+  "langchain-ollama>=0.1.1",
+  "langchain-anthropic>=0.1.20",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+  "ruff>=0.5.0",
+]
+
+[project.scripts]
+argos-run = "argos_nt.main:main"
+argos-tui = "argos_nt.ui.app:main"
+argos-menu = "argos_nt.cli_menu:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["argos_nt*"]
